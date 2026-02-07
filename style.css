@@ -115,13 +115,23 @@ button {
 }
 
 /* Close button */
+/* Close button (fixed & always visible) */
 .close {
   position: absolute;
-  top: -45px;
-  right: 0;
-  font-size: 32px;
-  color: white;
+  top: -12px;
+  right: -12px;
+  background: rgba(255,255,255,0.9);
+  color: #ff5fa2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  z-index: 1000;
 }
 
 /* Gallery Controls */
