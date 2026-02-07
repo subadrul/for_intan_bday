@@ -20,8 +20,8 @@ function prevImg() {
 }
 
 function unlockSecret() {
-  let pwd = prompt("Enter password:");
-  if (pwd === "love") {
+  let pwd = prompt("Enter your birthdate");
+  if (pwd === "10022002") {
     document.getElementById("secretContent").classList.remove("hidden");
   } else {
     alert("Wrong password 💔");
