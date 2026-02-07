@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday 💜</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<audio id="bgm" src="song.mp3" autoplay loop></audio>
+
+<div class="hearts"></div>
+
+<div class="container">
+  <section class="slide intro">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <div class="cake">
+      <div class="candle"><span class="flame"></span></div>
+      <div class="candle"><span class="flame"></span></div>
+      <div class="candle"><span class="flame"></span></div>
+    </div>
+    <p>Swipe up for a surprise 💕</p>
+  </section>
+
+  <section class="slide greeting">
+    <h2>💜 Birthday Wishes 💜</h2>
+    <p>May your life glow as bright as these candles 🕯️</p>
+  </section>
+
+  <section class="slide gallery">
+    <h2>📸 Memories</h2>
+    <button onclick="openGallery()">Tap to Reveal</button>
+  </section>
+
+  <section class="slide secret">
+    <h2>🔒 Secret Page</h2>
+    <button onclick="unlockSecret()">Enter Password</button>
+    <p id="secretContent" class="hidden">You are my favorite miracle 💞</p>
+  </section>
+
+  <section class="slide end">
+    <h2>🎁 With All My Love</h2>
+    <p>Happy Birthday 💗</p>
+  </section>
+</div>
+
+<div id="galleryModal" class="modal">
+  <span class="close" onclick="closeGallery()">×</span>
+  <div class="modal-content">
+    <img id="galleryImg" src="img1.jpg" />
+    <div class="controls">
+      <button onclick="prevImg()">‹</button>
+      <button onclick="nextImg()">›</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
