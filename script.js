@@ -2,7 +2,7 @@ let images = ['intan1.jpeg', 'intan2.jpeg', 'intan3.jpeg', 'intan_paparazzi1.jpe
 let current = 0;
 
 function openGallery() {
-  document.getElementById("galleryModal").style.display = "block";
+  document.getElementById("galleryModal").style.display = "flex";
 }
 
 function closeGallery() {
