@@ -86,38 +86,70 @@ button {
 }
 
 /* Modal */
+/* ===== Responsive Gallery Modal ===== */
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.8);
-  z-index: 10;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-  margin: auto;
-  margin-top: 20%;
+  position: relative;
   width: 90%;
+  max-width: 500px;       /* PC & tablet friendly */
+  max-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal img {
-  width: 100%;
-  border-radius: 20px;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 16px;
 }
 
+/* Close button */
 .close {
   position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 30px;
+  top: -45px;
+  right: 0;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
 }
 
+/* Gallery Controls */
 .controls {
+  position: absolute;
+  inset: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  align-items: center;
+  pointer-events: none;
 }
 
-.hidden {
-  display: none;
+.controls button {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Bigger tap area for mobile */
+.controls button:first-child {
+  margin-left: -22px;
+}
+.controls button:last-child {
+  margin-right: -22px;
 }
