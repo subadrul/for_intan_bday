@@ -1,4 +1,4 @@
-let images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+let images = ['intan1.jpeg', 'intan2.jpeg', 'intan3.jpeg', 'intan_paparazzi1.jpeg', 'intan_paparazzi2.jpeg', 'intan_paparazzi3.jpeg', 'intan@hospital.jpeg', 'Intan@hospital2.jpeg', 'intan@gym.jpeg'];
 let current = 0;
 
 function openGallery() {
